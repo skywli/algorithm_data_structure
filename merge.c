@@ -1,7 +1,7 @@
 #include "test.h"
 void merge(int arr[],int left,int mid,int right){
-    int l=mid-left+1;
-    int r=right-mid;
+    int l=mid-left+1; //include mid
+    int r=right-mid; // not include mid
     int* L=(int*)malloc(sizeof(int)*l);
     int* R=(int*)malloc(sizeof(int)*r);
 
